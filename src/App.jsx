@@ -1,9 +1,12 @@
 import SideNav from './components/SideNav'
-import Header from './components/Header'
+import Main from './components/Main'
 function App() {
 
   return (
-      <><Header /><SideNav /></>
+    <div>
+      <SideNav />
+      <Main />
+    </div>
   )
 }
 
