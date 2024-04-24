@@ -1,37 +1,69 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaLinkedin, FaPython } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
+import { FaReact } from "react-icons/fa";
+import { TbBrandPython } from "react-icons/tb";
+import { RiJavascriptFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
+import { SiExpress } from "react-icons/si";
 
+/*
+                        <a href='https://www.linkedin.com/in/bryson-greco-15807a21b/' target='_blank'>
+                            <FaLinkedin className='cursor-pointer' size={20} />
+                        </a>
+                        <a href='https://www.github.com/grecob' target='_blank'>
+                            <FaGithub className='cursor-pointer' size={20} />
+                        </a>
+*/
 const Main = () => {
     return (
         <div id='main'>
-            <img className='w-full h-screen object-cover' src="https://i.redd.it/einov412z1c11.png" />
-            <div className='w-full h-screen absolute top-0 left-0 bg-white/50'>
-                <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
-                    <h1 className='sm:text-5xl text-4xl font-bold text-grey-800'>I am... </h1>
+            <img className='w-full h-screen object-cover' src="https://cdn.videoplasty.com/animation/binary-code-rain-stock-animation-68206-1280x720.jpg" />
+            <div className='w-full h-screen absolute top-0 left-0 bg-white/100'>
+                <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center text-center'>
+                    <h1 className='sm:text-2xl text-2xl font-bold text-[#001b5e]'>Hello, I am...</h1>
                     <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>
                         <TypeAnimation
                             sequence={[
-                                'Johnny Danger',
+                                'Bryson Greco',
                                 1000,
-                                'Seth Ambrose',
-                                1000,
-                                'HELL MODE CENA',
-                                1000,
-                                'Fart Lover Nolan',
-                                1000
                             ]}
-                            wrapper="span"
+                            wrapper="div"
                             speed={50}
-                            style={{ fontSize: '2em', display: 'inline-block' }}
+                            style={{ fontSize: '2em', display: 'inline' }}
                             repeat={Infinity}
                         />
                     </h2>
-                    <div className='flex justify-between pt-6 max-w-[200px] w-full'>
-                        <FaLinkedin className='cursor-pointer' size={20}/>
-                        <FaInstagram className='cursor-pointer' size={20}/>
-                        <FaGithub className='cursor-pointer' size={20}/>
+
+                    <p className=' pt-4 text-gray-800'>
+                        <TypeAnimation
+                            sequence={[
+                                '',
+                                1000,
+                                'I am a recent graduate with a passion for coding.' +
+                                ' I love learning new technologies and applying my ' +
+                                'knowledge.',
+                                10000,
+                            ]}
+                            wrapper="div"
+                            speed={50}
+                            style={{ fontSize: '2em', display: 'inline' }}
+                            repeat={Infinity}
+                        />
+                    </p>
+
+                    <div className='text-wrap flex justify-between pt-6 max-w-[400px] w-full'>
+
+                        <TbBrandPython size={25} />
+                        <TbBrandCpp size={25} />
+                        <FaReact size={25} />
+                        <RiJavascriptFill size={25} />
+                        <BiLogoTypescript size={25} />
+                        <SiTailwindcss size={25} />
+                        <SiExpress size={25} />
                     </div>
                 </div>
             </div>

@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import TitleSection from './TitleSection'
 
 const Contact = () => {
     return (
         <div id='contact' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
-            <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>Contact</h1>
+            <TitleSection title={'Contact'} />
             <form action="https://getform.io/f/pamqjnpa" method='POST' encType='multipart/form-data'>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                     <div className='flex flex-col py-2'>
