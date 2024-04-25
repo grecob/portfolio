@@ -1,9 +1,19 @@
 import SideNav from './components/SideNav'
-import Header from './components/Header'
+import Main from './components/Main'
+import WorkExperience from './components/WorkExperience'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 function App() {
 
   return (
-      <><Header /><SideNav /></>
+    <div>
+      <SideNav />
+      <Main />
+      <Projects />
+      <WorkExperience />
+      <Contact />
+      
+    </div>
   )
 }
 
