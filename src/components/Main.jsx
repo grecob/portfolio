@@ -9,7 +9,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
-
+import { BiCloudDownload } from 'react-icons/bi';
 /*
                         <a href='https://www.linkedin.com/in/bryson-greco-15807a21b/' target='_blank'>
                             <FaLinkedin className='cursor-pointer' size={20} />
@@ -21,7 +21,8 @@ import { SiExpress } from "react-icons/si";
 const Main = () => {
     return (
         <div id='main'>
-            <img className='w-full h-screen object-cover' src="https://cdn.videoplasty.com/animation/binary-code-rain-stock-animation-68206-1280x720.jpg" />
+
+            <img className='w-full h-screen object-cover' src="" />
             <div className='w-full h-screen absolute top-0 left-0 bg-white/100'>
                 <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center text-center'>
                     <h1 className='sm:text-2xl text-2xl font-bold text-[#001b5e]'>Hello, I am...</h1>
@@ -38,22 +39,23 @@ const Main = () => {
                         />
                     </h2>
 
-                    <p className=' pt-4 text-gray-800'>
+                    <div className=' pt-4 text-gray-800-italic'>
                         <TypeAnimation
                             sequence={[
                                 '',
                                 1000,
-                                'I am a recent graduate with a passion for coding.' +
-                                ' I love learning new technologies and applying my ' +
-                                'knowledge.',
-                                10000,
+                                "As a freshly graduated Computer Science student, my journey is driven by an unwavering enthusiasm for coding. My academic background has laid a solid foundation, but I am just now learning about the thrill of solving real-world problems, and further fueling my passion for software development." +
+                                "I'm continually honing my skills in machine learning and front-end development by applying my knowledge to real projects. Whether it's streamlining processes, creating intuitive interfaces, or diving into the depths of data, I bring a blend of curiosity and creativity to the table." +
+                                "I invite you to explore my portfolio to see my journey in coding and my commitment to excellence. Let's connect and create something extraordinary!"
+,
+                                100000,
                             ]}
                             wrapper="div"
-                            speed={50}
-                            style={{ fontSize: '2em', display: 'inline' }}
+                            speed={70}
+                            style={{ fontSize: '1em', display: 'inline' }}
                             repeat={Infinity}
                         />
-                    </p>
+                    </div>
 
                     <div className='text-wrap flex justify-between pt-6 max-w-[400px] w-full'>
 
@@ -64,6 +66,14 @@ const Main = () => {
                         <BiLogoTypescript size={25} />
                         <SiTailwindcss size={25} />
                         <SiExpress size={25} />
+                    </div>
+                    <div className=' mt-4'>
+                        <a href={'/public/grecob_resume.pdf'} target='_blank' className='resume-button'>
+                            <div className='flex items-center justify-center p-3 bg-white outline rounded-sm outline-[#001b5e82] text-black cursor-pointer text-xl font-bold'>
+                                Resume <BiCloudDownload size={24} className="ml-2" />
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>

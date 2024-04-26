@@ -1,0 +1,34 @@
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon within the button */
+    width: 50px; /* Maintain the width as 50px */
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-button:hover, .nav-button:focus {
+    width: 140px; /* Expands to show text on hover/focus */
+}
+
+.nav-text {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out 0.1s;
+    display: none;
+}
+
+.nav-button:hover .nav-text, .nav-button:focus .nav-text {
+    opacity: 1;
+}
+
+/* Mobile adjustments */
+@media (hover: none) {
+    .nav-button:hover, .nav-button:focus {
+        width: 50px;
+    }
+
+    .nav-text {
+        display: none;
+    }
+}
