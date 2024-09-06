@@ -5,6 +5,16 @@ import TitleSection from './TitleSection'
 
 const workExperienceData = [
     {
+        startMonth: "June",
+        startYear: "2024",
+        endMonth: "Current",
+        endYear: null,
+        title: 'Junior Software Developer',
+        duration: '4 months',
+        details: 'Maintained a DoD secret clearance while working on critical software projects, adhering to client requirements and ensuring compliance with DoD security protocols.'
+    },
+
+    {
         startMonth: "January",
         startYear: 2023,
         endMonth: "May",
@@ -17,10 +27,10 @@ const workExperienceData = [
     {
         startMonth: "January",
         startYear: 2022,
-        endMonth: "Current",
-        endYear: null,
+        endMonth: "May",
+        endYear: 2024,
         title: 'Produce Clerk',
-        duration: '2 years 2 months',
+        duration: '2 years 5 months',
         details: 'I provided detailed customer service, demonstrating strong communication skills and effective issue resolution, collaborated with colleagues in a team-oriented environment to achieve business goals, and managed time efficiently while balancing work responsibilities with academic commitments.'
     },
 ]

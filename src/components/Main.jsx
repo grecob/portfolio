@@ -44,9 +44,9 @@ const Main = () => {
                             sequence={[
                                 '',
                                 1000,
-                                "As a freshly graduated Computer Science student, my journey is driven by an unwavering enthusiasm for coding. My academic background has laid a solid foundation, but I am just now learning about the thrill of solving real-world problems, and further fueling my passion for software development." +
-                                "I'm continually honing my skills in machine learning and front-end development by applying my knowledge to real projects. Whether it's streamlining processes, creating intuitive interfaces, or diving into the depths of data, I bring a blend of curiosity and creativity to the table." +
-                                "I invite you to explore my portfolio to see my journey in coding and my commitment to excellence. Let's connect and create something extraordinary!"
+                                "I am a recent graduate with a Bachelor's Degree in Computer Science and an active Secret Security clearance. I am currently working as a Junior Software Developer " +
+                                " and I am always looking to learn and improve. I am currently working on a 3D object viewer utilizing OpenGL and ImGui. I am also developing a full-stack social website " +
+                                " with the goal of connecting college students with others at their campus, allowing the arrangement of study sessions and study groups."
 ,
                                 100000,
                             ]}
